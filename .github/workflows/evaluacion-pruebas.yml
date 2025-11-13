@@ -58,8 +58,8 @@ jobs:
           mkdir -p resultados
 
           # Detectar qué clase está presente y ejecutar sólo esa
-          if javap -cp bin test.PersonaControllerTest > /dev/null 2>&1; then
-            SELECT_CLASS="test.PersonaControllerTest"
+          if javap -cp bin test.CartControllerTest > /dev/null 2>&1; then
+            SELECT_CLASS="test.CartControllerTest"
           else
             echo "No se encontró ninguna clase de test"
             exit 1
